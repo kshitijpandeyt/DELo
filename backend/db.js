@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-require('dotenv').config({ path: './.env' });
+const dotenv = require("dotenv");
+dotenv.config();
 const mongoURI = process.env.DATABASE
 mongoose.set('strictQuery', true);
 const mongoDB =async() =>{
