@@ -6,7 +6,7 @@ const port = process.env.port || 5000
 const mongoDB = require("./db")
 
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://delo-backend.onrender.com");
+  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-Width, Content-Type, Accept"
